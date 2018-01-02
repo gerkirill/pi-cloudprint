@@ -12,8 +12,10 @@
 
  # Remove network wait on boot
 
+```
 mkdir -p /etc/systemd/system/networking.service.d/
 nano /etc/systemd/system/networking.service.d/reduce-timeout.conf
+```
 
 put the following content into reduce-timeout.conf:
 ```
