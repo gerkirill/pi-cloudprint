@@ -10,6 +10,17 @@
  - `nmtui-connect GL-Corp`
  - `nmtui-connect`
 
+ # Remove network wait on boot
+
+mkdir -p /etc/systemd/system/networking.service.d/
+nano /etc/systemd/system/networking.service.d/reduce-timeout.conf
+
+put the following content into reduce-timeout.conf:
+```
+[Service]
+TimeoutStartSec=1
+```
+
 # A bit of `history`
 
     1  wiconfig
