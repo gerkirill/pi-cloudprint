@@ -1,3 +1,7 @@
+# Setup:
+ - hardware: Orange Pi Zero
+ - OS: armbian (https://www.armbian.com/orange-pi-zero/ ?)
+
 # Useful commands
 
  - `vi /etc/wpa_supplicant/wpa_supplicant.conf`
